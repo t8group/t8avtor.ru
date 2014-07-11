@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,800italic,300,800&subset=cyrillic,latin);
 html {
@@ -62,7 +63,7 @@ mark {
   background: #ff0;
   color: #000; }
 
-small {
+small, footer {
   font-size: 80%; }
 
 sub,
@@ -344,19 +345,20 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
-  h1 small,
-  h1 .small, h2 small,
-  h2 .small, h3 small,
-  h3 .small, h4 small,
-  h4 .small, h5 small,
-  h5 .small, h6 small,
+  h1 small, h1 footer,
+  h1 .small, h2 small, h2 footer,
+  h2 .small, h3 small, h3 footer,
+  h3 .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
+  h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
-  .h1 .small, .h2 small,
-  .h2 .small, .h3 small,
-  .h3 .small, .h4 small,
-  .h4 .small, .h5 small,
-  .h5 .small, .h6 small,
+  .h1 footer,
+  .h1 .small, .h2 small, .h2 footer,
+  .h2 .small, .h3 small, .h3 footer,
+  .h3 .small, .h4 small, .h4 footer,
+  .h4 .small, .h5 small, .h5 footer,
+  .h5 .small, .h6 small, .h6 footer,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
@@ -367,14 +369,16 @@ h2, .h2,
 h3, .h3 {
   margin-top: 22px;
   margin-bottom: 11px; }
-  h1 small,
-  h1 .small, .h1 small,
+  h1 small, h1 footer,
+  h1 .small, .h1 small, .h1 footer,
   .h1 .small,
   h2 small,
-  h2 .small, .h2 small,
+  h2 footer,
+  h2 .small, .h2 small, .h2 footer,
   .h2 .small,
   h3 small,
-  h3 .small, .h3 small,
+  h3 footer,
+  h3 .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
@@ -383,14 +387,16 @@ h5, .h5,
 h6, .h6 {
   margin-top: 11px;
   margin-bottom: 11px; }
-  h4 small,
-  h4 .small, .h4 small,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
-  h5 .small, .h5 small,
+  h5 footer,
+  h5 .small, .h5 small, .h5 footer,
   .h5 .small,
   h6 small,
-  h6 .small, .h6 small,
+  h6 footer,
+  h6 .small, .h6 small, .h6 footer,
   .h6 .small {
     font-size: 75%; }
 
@@ -424,7 +430,7 @@ p {
     .lead {
       font-size: 24px; } }
 
-small,
+small, footer,
 .small {
   font-size: 85%; }
 
@@ -585,6 +591,7 @@ blockquote {
     margin-bottom: 0; }
   blockquote footer,
   blockquote small,
+  blockquote footer,
   blockquote .small {
     display: block;
     font-size: 80%;
@@ -592,6 +599,7 @@ blockquote {
     color: #999999; }
     blockquote footer:before,
     blockquote small:before,
+    blockquote footer:before,
     blockquote .small:before {
       content: '\2014 \00A0'; }
 
@@ -604,16 +612,20 @@ blockquote.pull-right {
   text-align: right; }
   .blockquote-reverse footer:before,
   .blockquote-reverse small:before,
+  .blockquote-reverse footer:before,
   .blockquote-reverse .small:before,
   blockquote.pull-right footer:before,
   blockquote.pull-right small:before,
+  blockquote.pull-right footer:before,
   blockquote.pull-right .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
+  .blockquote-reverse footer:after,
   .blockquote-reverse .small:after,
   blockquote.pull-right footer:after,
   blockquote.pull-right small:after,
+  blockquote.pull-right footer:after,
   blockquote.pull-right .small:after {
     content: '\00A0 \2014'; }
 
@@ -5608,10 +5620,15 @@ html, body {
 #wrapper {
   margin-top: 3em; }
 
+.navmenu-inverse {
+  background-color: #000000;
+  border-left: 1px solid #222222; }
+
 .t8s-navbar {
   background: transparent;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999; }
 
 .t8s-logo--header {
   background-image: url(../img/t8s-logo.svg);
@@ -5619,7 +5636,7 @@ html, body {
   background-position: center;
   -webkit-background-size: contain;
   background-size: contain;
-  width: 230px;
+  width: 270px;
   height: 50px;
   margin: 0 15px;
   padding: 0;
@@ -5653,19 +5670,72 @@ html, body {
 
 .t8s-intro {
   width: 100%;
-  height: 90%;
-  background-image: url(../img/ripol-bg.jpg);
+  height: 100%;
+  background-image: url(../img/14335771877_ac1b751f45_k.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   display: block;
-  background-color: #00b3ee; }
+  background-color: #000000; }
+
+.t8s-intro__copytext__text {
+  padding-top: 2em;
+  display: block; }
 
 .t8s-intro__copytext {
-  background-color: rgba(0, 0, 0, 0.43);
-  width: 50%;
-  float: right;
-  padding: 2em;
-  margin-top: 2em;
-  color: #ffffff; }
+  background-image: url(../img/bg-b2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-bottom: 3em; }
 
+.t8s-intro__copytext__list {
+  list-style: none; }
+  .t8s-intro__copytext__list li:before {
+    content: '– ';
+    display: inline-block;
+    margin-left: -13px;
+    padding-right: 5px; }
+
+.t8s-intro__tagline {
+  color: #ffffff;
+  display: block;
+  margin-top: 35%; }
+
+.t8s-lead-form {
+  margin-top: 4em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.27);
+  color: #ffffff;
+  border-radius: 5px;
+  max-width: 600px; }
+
+.ccattrib {
+  margin-left: 15px;
+  font-size: 14px;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #959595; }
+  .ccattrib a {
+    color: #005a79; }
+
+.t8s-intro__copytext__signature {
+  background-image: url(../img/signaturepng-b.png);
+  width: 300px;
+  height: 100px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+footer {
+  margin: 2em auto; }
+
+.t8s-footer__logos img {
+  opacity: 0.7; }
+
+.t8s-footer__logos img:hover {
+  opacity: 1; }
+
+.t8s-footer__underline {
+  border-bottom: 1px dotted #eee;
+  padding-bottom: 1em;
+  margin-bottom: 1em; }
 

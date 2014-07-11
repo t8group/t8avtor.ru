@@ -14,10 +14,16 @@ html, body {
   margin-top: 3em;
 }
 
+.navmenu-inverse {
+  background-color: #000000;
+  border-left: 1px solid #222222;
+}
+
 .t8s-navbar {
   background: transparent;
   position: absolute;
   width: 100%;
+  z-index: 9999;
 }
 
 .t8s-logo--header {
@@ -25,7 +31,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 230px;
+  width: 270px;
   height: 50px;
   margin: 0 15px;
   padding: 0;
@@ -60,18 +66,85 @@ html, body {
 
 .t8s-intro {
   width: 100%;
-  height: 90%;
-  background-image: url(../img/ripol-bg.jpg);
+  height: 100%;
+  background-image: url(../img/14335771877_ac1b751f45_k.jpg);
   background-size: cover;
   display: block;
-  background-color: #00b3ee;
+  background-color: #000000;
 }
 
+
+.t8s-intro__copytext__text {
+  padding-top: 2em;
+  display: block;
+}
 .t8s-intro__copytext {
- background-color: rgba(0, 0, 0, 0.43);
-  width: 50%;
-  float: right;
-  padding: 2em;
-  margin-top: 2em;
+//  background-color: #000000;
+  background-image: url(../img/bg-b2.jpg);
+  background-size: cover;
+//  color: #ffffff;
+  padding-bottom: 3em;
+}
+
+.t8s-intro__copytext__list {
+  list-style: none;
+  li:before {
+    content: '– ';
+    display: inline-block;
+    margin-left: -13px;
+    padding-right: 5px;
+  }
+}
+
+.t8s-intro__tagline {
   color: #ffffff;
+  display: block;
+  margin-top: 35%;
+}
+
+.t8s-lead-form {
+  margin-top: 4em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.27);
+  color: #ffffff;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.ccattrib {
+  margin-left: 15px;
+  font-size: 14px;
+  display: inline;
+  background-color: rgba(0,0,0,0.5);
+  color: #959595;
+  a {
+    color: #005a79;
+  }
+}
+
+.t8s-intro__copytext__signature{
+  background-image: url(../img/signaturepng-b.png);
+  width: 300px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer {
+  @extend small;
+  margin: 2em auto;
+}
+
+.t8s-footer__logos img{
+  opacity: 0.7;
+}
+.t8s-footer__logos img:hover{
+  opacity: 1;
+}
+
+
+.t8s-footer__underline {
+  border-bottom: 1px dotted #eee;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }

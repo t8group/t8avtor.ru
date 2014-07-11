@@ -8,9 +8,10 @@
       "ie 7"
     ]
   },
-  "convertHtml": {
-    "relativePaths": false
-  },
+    "convertHtml": {
+        "extension": ".html",
+        "relativePaths": true
+    },
   "debug": false,
   "domain": null,
   "lintScripts": false,

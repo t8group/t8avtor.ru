@@ -11,7 +11,7 @@ html, body {
 }
 
 #wrapper {
-  margin-top: 3em;
+  padding-top: 3em;
 }
 
 .navmenu-inverse {
@@ -20,6 +20,17 @@ html, body {
 }
 
 .t8s-navbar {
+  @extend .navbar;
+  @extend .navbar-fixed-top;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+.t8s-navbar--plain {
+  @extend .navbar;
+  @extend .navbar-default;
+  @extend .navbar-fixed-top;
   background: transparent;
   position: absolute;
   width: 100%;
@@ -28,6 +39,18 @@ html, body {
 
 .t8s-logo--header {
   background-image: url(../img/t8s-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 270px;
+  height: 50px;
+  margin: 0 15px;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+.t8s-navbar--plain .t8s-logo--header {
+  background-image: url(../img/logo-t8s2.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -49,7 +72,7 @@ html, body {
   margin-bottom: 4px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #444444;
+  border: 1px solid #eee;
 }
 .t8s-navbar-toggle:focus {
   outline: none; }
@@ -62,7 +85,9 @@ html, body {
 }
 .t8s-navbar-toggle .icon-bar + .icon-bar {
   margin-top: 6px; }
-
+.t8s-navbar--plain .t8s-navbar-toggle .icon-bar {
+  background-color: #222222;
+}
 
 .t8s-intro {
   width: 100%;
@@ -83,7 +108,7 @@ html, body {
   background-image: url(../img/bg-b2.jpg);
   background-size: cover;
 //  color: #ffffff;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
 }
 
 .t8s-intro__copytext__list {
@@ -147,4 +172,8 @@ footer {
   border-bottom: 1px dotted #eee;
   padding-bottom: 1em;
   margin-bottom: 1em;
+}
+
+body > ymaps {
+  width: 100%!important;
 }

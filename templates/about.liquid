@@ -1,5 +1,98 @@
 {% block content %}
 <div  id="wrapper"  class="container" style="margin-bottom: 3em">
-    <h1>about</h1>
+    <h1>О проекте</h1>
+
+    <p class="lead">
+        Наша производственная база включает в&nbsp;себя самое передовое оборудование в&nbsp;области цифровой печати и&nbsp;соответствующего
+    </p>
+
+    <article class="row feature">
+        <div class="col-sm-4 col-sm-push-8 text-center">
+            <img src="{{ "i-analytics.svg" | asset_url}}" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 col-sm-pull-4 feature-text">
+            <h2>Всевозможные виды анализа</h2>
+            <p>Наши методологии и&nbsp;программные сервисы позволяют выявлять и&nbsp;открывать новые ниши в&nbsp;издательской сфере, тем самым увеличивая читательский интерес и&nbsp;расширяя рынок сбыта.</p>
+        </div>
+    </article>
+    <article class="row feature">
+        <div class="col-sm-4 text-center">
+            <img src="{{ "i-edit.svg" | asset_url}}" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 feature-text">
+            <h2>Редакционно-издательские услуги</h2>
+            <p>Мы&nbsp;предлагаем максимально полный комплекс профессиональных редакционно-издательских услуг, с&nbsp;помощью которых можно оптимизировать редакционно-издательские процессы и&nbsp;создать лучшие условия для игроков рынка.</p>
+        </div>
+    </article>
+    <article class="row feature">
+        <div class="col-sm-4 col-sm-push-8 text-center">
+            <img src="{{ "i-press.svg" | asset_url}}" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 col-sm-pull-4 feature-text">
+            <h2>Цифровая и&nbsp;офсетная печать</h2>
+            <p>Наша производственная база включает в&nbsp;себя самое передовое оборудование в&nbsp;области цифровой печати и&nbsp;соответствующего программного обеспечения, благодаря чему мы&nbsp;имеем возможность изготовить высококачественный продукт по&nbsp;максимально выгодной цене. Печать возможна от&nbsp;1&nbsp;экземпляра.</p>            </div>
+    </article>
+
+    <article class="row feature">
+        <div class="col-sm-4 text-center">
+            <img src="{{ "i-promotion.svg" | asset_url}}" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 feature-text">
+            <h2>Продвижение книжных продуктов</h2>
+            <p>Накопленный опыт позволяет нам эффективно продвигать на&nbsp;рынке новые имена и&nbsp;проекты, создавая тем самым возможность для рекламы и&nbsp;пиара новых продуктов.</p>
+        </div>
+    </article>
+
+
+    <article class="row feature">
+        <div class="col-sm-4 col-sm-push-8 text-center">
+            <img src="{{ "i-legal.svg" | asset_url}}" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 col-sm-pull-4 feature-text">
+            <h2>Правовые услуги</h2>
+            <p>Созданные нами электронные базы авторских прав и&nbsp;хранилища данных на&nbsp;сегодняшний день являются крупнейшими в&nbsp;России. Это стало возможным благодаря работе высококлассных юристов и&nbsp;использования современного программного обеспечения.</p>
+        </div>
+    </article>
+    <article class="row feature">
+        <div class="col-sm-4 text-center">
+            <img src="{{ "i-logistics.svgg" | asset_url}}" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 feature-text">
+            <h2>Услуги складской логистики</h2>
+            <p>Высококачественная складская логистика и&nbsp;печать позволяют быстро и&nbsp;эффективно доставлять продукцию к&nbsp;потребителю, а&nbsp;также существенно оптимизировать расходы игроков малого и&nbsp;среднего издательского бизнеса. </p>
+        </div>
+    </article>
+
+    <article class="row feature">
+        <div class="col-sm-4 col-sm-push-8 text-center">
+            <img src="{{ "i-distribution.svg" | asset_url}}" class="§img-responsive" alt=""/>
+        </div>
+        <div class="col-sm-8 col-sm-pull-4 feature-text">
+            <h2>Услуги по&nbsp;распространению книжной продукции</h2>
+            <p>Наша система книгораспространения позволяет доставить книгу в&nbsp;электронном виде в&nbsp;35&nbsp;000 интернет-магазинов мира за&nbsp;1&nbsp;день и&nbsp;выполнить заказ на&nbsp;печать по&nbsp;требованию в&nbsp;кратчайшие сроки. На&nbsp;договорной основе мы&nbsp;доставляем книги в&nbsp;более чем 2000 книготорговые сети и&nbsp;независимые магазины в&nbsp;России и&nbsp;странах СНГ.</p>
+        </div>
+    </article>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="t8s-lead-form">
+                <form action="">
+                    <h4>Да, мне это интересно</h4>
+                    <div class="form-group">
+                        <input class="form-control" required type="text" placeholder="Ваше имя"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" required type="email" placeholder="Емейл"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" required type="tel" placeholder="Телефон"/>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-danger" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </div>
 {% endblock %}

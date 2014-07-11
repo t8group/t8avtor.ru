@@ -177,3 +177,46 @@ footer {
 body > ymaps {
   width: 100%!important;
 }
+
+
+.feature{
+  h2 {
+    margin-top: 1em;
+  }
+  margin: 5em auto;
+  .img-responsive {
+    position: relative;
+  }
+}
+
+.feature-text {
+  padding: 0 5em;
+}
+.feature-text > p {
+  font-size: 120%;
+}
+
+.t8s-author {
+  @extend .text-center;
+
+}
+
+.t8s-author{
+  margin-bottom: 2em;
+}
+
+.t8s-book {
+  margin: 1em 0;
+}
+
+.t8s-book__author {
+  @extend small;
+}
+
+.t8s-book__cover__image {
+  box-shadow:         0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+.t8s-book__title{
+
+}

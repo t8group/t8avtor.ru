@@ -63,7 +63,7 @@ mark {
   background: #ff0;
   color: #000; }
 
-small, footer {
+small, footer, .t8s-book__author {
   font-size: 80%; }
 
 sub,
@@ -345,20 +345,21 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
-  h1 small, h1 footer,
-  h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, h4 footer,
-  h4 .small, h5 small, h5 footer,
-  h5 .small, h6 small, h6 footer,
+  h1 small, h1 footer, h1 .t8s-book__author,
+  h1 .small, h2 small, h2 footer, h2 .t8s-book__author,
+  h2 .small, h3 small, h3 footer, h3 .t8s-book__author,
+  h3 .small, h4 small, h4 footer, h4 .t8s-book__author,
+  h4 .small, h5 small, h5 footer, h5 .t8s-book__author,
+  h5 .small, h6 small, h6 footer, h6 .t8s-book__author,
   h6 .small,
   .h1 small,
   .h1 footer,
-  .h1 .small, .h2 small, .h2 footer,
-  .h2 .small, .h3 small, .h3 footer,
-  .h3 .small, .h4 small, .h4 footer,
-  .h4 .small, .h5 small, .h5 footer,
-  .h5 .small, .h6 small, .h6 footer,
+  .h1 .t8s-book__author,
+  .h1 .small, .h2 small, .h2 footer, .h2 .t8s-book__author,
+  .h2 .small, .h3 small, .h3 footer, .h3 .t8s-book__author,
+  .h3 .small, .h4 small, .h4 footer, .h4 .t8s-book__author,
+  .h4 .small, .h5 small, .h5 footer, .h5 .t8s-book__author,
+  .h5 .small, .h6 small, .h6 footer, .h6 .t8s-book__author,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
@@ -369,16 +370,18 @@ h2, .h2,
 h3, .h3 {
   margin-top: 22px;
   margin-bottom: 11px; }
-  h1 small, h1 footer,
-  h1 .small, .h1 small, .h1 footer,
+  h1 small, h1 footer, h1 .t8s-book__author,
+  h1 .small, .h1 small, .h1 footer, .h1 .t8s-book__author,
   .h1 .small,
   h2 small,
   h2 footer,
-  h2 .small, .h2 small, .h2 footer,
+  h2 .t8s-book__author,
+  h2 .small, .h2 small, .h2 footer, .h2 .t8s-book__author,
   .h2 .small,
   h3 small,
   h3 footer,
-  h3 .small, .h3 small, .h3 footer,
+  h3 .t8s-book__author,
+  h3 .small, .h3 small, .h3 footer, .h3 .t8s-book__author,
   .h3 .small {
     font-size: 65%; }
 
@@ -387,16 +390,18 @@ h5, .h5,
 h6, .h6 {
   margin-top: 11px;
   margin-bottom: 11px; }
-  h4 small, h4 footer,
-  h4 .small, .h4 small, .h4 footer,
+  h4 small, h4 footer, h4 .t8s-book__author,
+  h4 .small, .h4 small, .h4 footer, .h4 .t8s-book__author,
   .h4 .small,
   h5 small,
   h5 footer,
-  h5 .small, .h5 small, .h5 footer,
+  h5 .t8s-book__author,
+  h5 .small, .h5 small, .h5 footer, .h5 .t8s-book__author,
   .h5 .small,
   h6 small,
   h6 footer,
-  h6 .small, .h6 small, .h6 footer,
+  h6 .t8s-book__author,
+  h6 .small, .h6 small, .h6 footer, .h6 .t8s-book__author,
   .h6 .small {
     font-size: 75%; }
 
@@ -430,7 +435,7 @@ p {
     .lead {
       font-size: 24px; } }
 
-small, footer,
+small, footer, .t8s-book__author,
 .small {
   font-size: 85%; }
 
@@ -443,7 +448,7 @@ cite {
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, .t8s-author {
   text-align: center; }
 
 .text-justify {
@@ -592,6 +597,7 @@ blockquote {
   blockquote footer,
   blockquote small,
   blockquote footer,
+  blockquote .t8s-book__author,
   blockquote .small {
     display: block;
     font-size: 80%;
@@ -600,6 +606,7 @@ blockquote {
     blockquote footer:before,
     blockquote small:before,
     blockquote footer:before,
+    blockquote .t8s-book__author:before,
     blockquote .small:before {
       content: '\2014 \00A0'; }
 
@@ -613,19 +620,23 @@ blockquote.pull-right {
   .blockquote-reverse footer:before,
   .blockquote-reverse small:before,
   .blockquote-reverse footer:before,
+  .blockquote-reverse .t8s-book__author:before,
   .blockquote-reverse .small:before,
   blockquote.pull-right footer:before,
   blockquote.pull-right small:before,
   blockquote.pull-right footer:before,
+  blockquote.pull-right .t8s-book__author:before,
   blockquote.pull-right .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
   .blockquote-reverse footer:after,
+  .blockquote-reverse .t8s-book__author:after,
   .blockquote-reverse .small:after,
   blockquote.pull-right footer:after,
   blockquote.pull-right small:after,
   blockquote.pull-right footer:after,
+  blockquote.pull-right .t8s-book__author:after,
   blockquote.pull-right .small:after {
     content: '\00A0 \2014'; }
 
@@ -5792,4 +5803,27 @@ footer {
 
 body > ymaps {
   width: 100% !important; }
+
+.feature {
+  margin: 5em auto; }
+  .feature h2 {
+    margin-top: 1em; }
+  .feature .img-responsive {
+    position: relative; }
+
+.feature-text {
+  padding: 0 5em; }
+
+.feature-text > p {
+  font-size: 120%; }
+
+.t8s-author {
+  margin-bottom: 2em; }
+
+.t8s-book {
+  margin: 1em 0; }
+
+.t8s-book__cover__image {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8); }
 

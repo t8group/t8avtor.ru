@@ -29,7 +29,14 @@ html, body {
 .navmenu-inverse {
   background-color: $t8s-attention-color;
   border-left: none;
+  li a {
+    color: #f5f5f5 !important;
+  }
+  li.active a {
+    background-color: #c68e00!important;
+  }
 }
+
 
 .t8s-navbar {
   @extend .navbar;
@@ -103,6 +110,16 @@ html, body {
 .t8s-navbar-toggle:focus, .t8s-navbar-toggle:hover {
   outline: none;
   color: #ffffff;
+}
+
+.t8s-navbar-toggle--plain{
+  color: #222222;
+  background: transparent;
+  border: 1px solid #222222;
+}
+.t8s-navbar-toggle--plain:focus, .t8s-navbar-toggle--plain:hover {
+  outline: none;
+  color: #222222;
 }
 
 

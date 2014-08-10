@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="81px" viewBox="0 0 80 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>t8-icon-ebook</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+            <path d="M79.645,39.361 C79.645,61.32 61.844,79.121 39.885,79.121 C17.926,79.121 0.125,61.32 0.125,39.361 C0.125,17.402 17.926,-0.399 39.885,-0.399 C61.844,-0.399 79.645,17.402 79.645,39.361" id="Fill-34" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+            <path d="M18.674,64.962 L18.674,15.433 C18.674,12.551 21.01,10.215 23.892,10.215 L61.096,10.215 L61.096,64.962 L18.674,64.962" id="Fill-35" fill="#63CCCA" sketch:type="MSShapeGroup"></path>
+            <path d="M61.096,11.071 L23.46,11.071 C21.155,11.071 19.27,12.957 19.27,15.261 C19.27,17.566 21.155,19.452 23.46,19.452 L61.096,19.452" id="Fill-36" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M61.096,20.308 L23.735,20.308 C20.952,20.308 18.689,18.044 18.689,15.261 C18.689,12.479 20.952,10.215 23.735,10.215 L61.096,10.215 L61.096,12.558 L23.735,12.558 C22.245,12.558 21.032,13.771 21.032,15.261 C21.032,16.752 22.245,17.964 23.735,17.964 L61.096,17.964 L61.096,20.308" id="Fill-37" fill="#805393" sketch:type="MSShapeGroup"></path>
+            <path d="M44.912,37.677 C45.335,37.254 45.118,36.53 44.532,36.41 L39.116,35.296 L33.369,34.045 C32.835,33.929 32.36,34.402 32.474,34.936 L34.85,46.106 C34.974,46.69 35.696,46.903 36.117,46.481 L37.404,45.193 C37.697,44.899 38.173,44.899 38.467,45.193 L43.027,49.75 C43.321,50.043 43.797,50.043 44.09,49.749 L48.194,45.641 C48.487,45.348 48.487,44.872 48.194,44.578 L43.633,40.021 C43.339,39.728 43.339,39.252 43.632,38.958 L44.912,37.677" id="Fill-38" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

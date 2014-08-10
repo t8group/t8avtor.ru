@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="145px" height="102px" viewBox="0 0 145 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>t8-icon-paperbook</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(46.000000, 11.000000)">
+            <path d="M81.422,40.375 C81.422,62.762 63.273,80.911 40.885,80.911 C18.497,80.911 0.348,62.762 0.348,40.375 C0.348,17.987 18.497,-0.162 40.885,-0.162 C63.273,-0.162 81.422,17.987 81.422,40.375" id="Fill-1" fill="#E0E1D1" sketch:type="MSShapeGroup"></path>
+            <path d="M40.369,19.701 C40.536,20.139 41.151,20.139 41.318,19.701 C42.365,16.961 45.026,15.002 48.122,15.002 L71.129,15.002 C75.414,15.002 78.92,18.508 78.92,22.793 L78.92,53.912 C78.92,58.198 75.414,61.704 71.129,61.704 L48.122,61.704 C44.119,61.704 43.087,66.96 40.844,66.96 C38.601,66.96 37.568,61.704 33.565,61.704 L10.641,61.704 C6.356,61.704 2.85,58.198 2.85,53.912 L2.85,22.793 C2.85,18.508 6.356,15.002 10.641,15.002 L33.565,15.002 C36.661,15.002 39.322,16.961 40.369,19.701" id="Fill-2" fill="#FBFFF6" sketch:type="MSShapeGroup"></path>
+            <path d="M24,14 L24,26 L33,26 L33,28 L24,28 L24,31 L33,31 L33,34 L24,34 L24,35 L33,35 L33,39 L24,39 L24,40 L33,40 L33,44 L24,44 L24,45 L33,45 L33,49 L24,49 L24,50 L33,50 L33,54 L24,54 L24,62.108 C38,61.805 36.873,66.898 40.939,68.154 C40.929,61.937 40.885,14 40.885,14 L24,14" id="Fill-3" fill="#DADFC9" sketch:type="MSShapeGroup"></path>
+            <path d="M10,26 L10,28 L24,28 L24,26 L10,26" id="Fill-4" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M33,26 L24,26 L24,28 L33,28 L33,26" id="Fill-5" fill="#309F97" sketch:type="MSShapeGroup"></path>
+            <path d="M10,31 L10,34 L24,34 L24,31 L10,31" id="Fill-6" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M33,31 L24,31 L24,34 L33,34 L33,31" id="Fill-7" fill="#309F97" sketch:type="MSShapeGroup"></path>
+            <path d="M10,35 L10,39 L24,39 L24,35 L10,35" id="Fill-8" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M33,35 L24,35 L24,39 L33,39 L33,35" id="Fill-9" fill="#309F97" sketch:type="MSShapeGroup"></path>
+            <path d="M10,40 L10,44 L24,44 L24,40 L10,40" id="Fill-10" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M33,40 L24,40 L24,44 L33,44 L33,40" id="Fill-11" fill="#309F97" sketch:type="MSShapeGroup"></path>
+            <path d="M10,45 L10,49 L24,49 L24,45 L10,45" id="Fill-12" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M33,45 L24,45 L24,49 L33,49 L33,45" id="Fill-13" fill="#309F97" sketch:type="MSShapeGroup"></path>
+            <path d="M10,50 L10,54 L24,54 L24,50 L10,50" id="Fill-14" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M33,50 L24,50 L24,54 L33,54 L33,50" id="Fill-15" fill="#309F97" sketch:type="MSShapeGroup"></path>
+            <path d="M49,26 L72,26 L72,28 L49,28 L49,26 Z" id="Fill-16" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M49,31 L72,31 L72,34 L49,34 L49,31 Z" id="Fill-17" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M49,35 L72,35 L72,39 L49,39 L49,35 Z" id="Fill-18" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M49,40 L72,40 L72,44 L49,44 L49,40 Z" id="Fill-19" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M49,45 L72,45 L72,49 L49,49 L49,45 Z" id="Fill-20" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M49,50 L72,50 L72,54 L49,54 L49,50 Z" id="Fill-21" fill="#37BBB6" sketch:type="MSShapeGroup"></path>
+            <path d="M71.641,15.002 C75.645,15.002 78.92,18.277 78.92,22.281 L78.92,54.425 C78.92,58.428 75.645,61.704 71.641,61.704 L48.122,61.704 C44.119,61.704 43.087,66.96 40.844,66.96 C38.601,66.96 37.568,61.704 33.565,61.704 L10.129,61.704 C6.126,61.704 2.85,58.428 2.85,54.425 L2.85,22.281 C2.85,18.277 6.126,15.002 10.129,15.002 L33.565,15.002 C37.568,15.002 40.844,18.277 40.844,22.281 C40.844,18.277 44.119,15.002 48.122,15.002 L71.641,15.002 M33.565,12.595 L10.129,12.595 C4.788,12.595 0.443,16.94 0.443,22.281 L0.443,54.425 C0.443,59.766 4.788,64.111 10.129,64.111 L33.565,64.111 C34.592,64.111 35.85,65.201 36.819,67.069 C37.747,68.858 38.21,71.084 40.844,71.084 C43.477,71.084 43.94,68.858 44.868,67.069 C45.837,65.201 47.095,64.111 48.122,64.111 L71.641,64.111 C76.982,64.111 81.327,59.766 81.327,54.425 L81.327,22.281 C81.327,16.94 76.982,12.595 71.641,12.595 L33.565,12.595" id="Fill-22" fill="#805393" sketch:type="MSShapeGroup"></path>
+            <path d="M58.465,28.397 L58.465,15.931 C58.465,15.053 57.754,14.341 56.877,14.341 L50.244,14.341 C49.367,14.341 48.655,15.053 48.655,15.931 L48.655,28.397 C48.655,28.821 49.14,29.062 49.478,28.806 L53.251,25.949 C53.434,25.811 53.687,25.811 53.87,25.949 L57.642,28.806 C57.98,29.062 58.465,28.821 58.465,28.397" id="Fill-23" fill="#F8554E" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

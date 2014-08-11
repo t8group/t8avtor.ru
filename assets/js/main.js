@@ -4,14 +4,15 @@
 
 $('.t8s-lead-form')
     .on('submit', function(event){
-        event.preventDefault();
-        var form = $(this)
-        var btn = form.find('.t8s-lead-form__button');
-        btn.button('loading'),
+//        event.preventDefault();
+//        var form = $(this)
+//        var btn = form.find('.t8s-lead-form__button');
+//        btn.button('loading'),
 //        setTimeout(function () {
 //            btn.button("reset");
 //            $('#successModal').modal('toggle');
-//            $('.t8s-lead-form').clearForm();
+//            console.log(form.serialize());
+//            form.clearForm();
 //        }, 3e3)
         $.ajax({
             url: 'http://landing.dlmp.net/request',

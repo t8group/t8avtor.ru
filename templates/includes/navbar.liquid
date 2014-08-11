@@ -1,23 +1,20 @@
 <div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas" style="">
-    <a href="/index"><h1 class="text-hide t8s-logo--header">Т8 Авторские решения</h1></a>
+    <a href="/index"><h1 class="text-hide t8s-logo--header2">Т8 Авторские решения</h1></a>
     <ul class="nav navmenu-nav">
-        <li {% if mixture.url == 'index' %}class="active"{% endif %}><a href="/index">Издайте книгу</a></li>
+        <li {% if mixture.url == 'index' %}class="active"{% endif %}><a href="/index"><i class="glyphicon glyphicon-home"></i> Главная</a></li>
         <li {% if mixture.url == 'about' %}class="active"{% endif %}><a href="/about">О проекте</a></li>
-        <li {% if mixture.url == 'authors' %}class="active"{% endif %}><a href="/authors">Наши авторы</a></li>
-        <li {% if mixture.url == 'books' %}class="active"{% endif %}><a href="/books">Наши книги</a></li>
         <li {% if mixture.url == 'contests' %}class="active"{% endif %}><a href="/contests">Конкурсы</a></li>
+        <li {% if mixture.url == 'offers' %}class="active"{% endif %}><a href="/offers">Акции</a></li>
         <li {% if mixture.url == 'partners' %}class="active"{% endif %}><a href="/partners">Партнеры</a></li>
         <li {% if mixture.url == 'contacts' %}class="active"{% endif %}><a href="/contact">Контакты</a></li>
     </ul>
 </div>
 
 <nav class="t8s-navbar">
-    <div class="container-liquid">
+    <div class="container">
         <button type="button" class="t8s-navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            МЕНЮ
         </button>
-        <a href="/index"><h1 class="text-hide t8s-logo--header">Т8 Авторские решения</h1></a>
+        <a href="/index"><h1 class="text-hide t8s-logo--header {% if mixture.url != 'index' %}t8s-logo--header--black{% endif %}">Т8 Авторские решения</h1></a>
     </div>
 </nav>

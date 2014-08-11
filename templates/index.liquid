@@ -1,80 +1,238 @@
 {% block content %}
-<div class="t8s-intro">
-    <div class="container-liquid">
-        <div class="col-md-6"></div>
-        <div class="col-md-6">
-            <div class="t8s-intro__tagline">
-                <h1>Ваша задача&nbsp;— <strong>написать</strong></h1>
-                <h1>Наша&nbsp;— <strong>сделать&nbsp;вас известным</strong></h1>
-            </div>
-            <div class="t8s-lead-form">
-                <form action="">
-                    <h4>Да, мне это интересно</h4>
-                    <div class="form-group">
-                        <input class="form-control" required type="text" placeholder="Ваше имя"/>
+    <section class="t8s-intro">
+        <div class="container">
+            <div class="row t8s-intro--image">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="t8s-intro__copytext">
+                        <h1>Услуги профессионалов</h1>
+                        <br/>
+                        <p class="t8s-intro__copytext__tagline">для начинающих и профессиональных&nbsp;авторов</p>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" required type="email" placeholder="Емейл"/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" required type="tel" placeholder="Телефон"/>
-                    </div>
-                    <div class="text-right">
-                        <button class="btn btn-danger" type="submit">Отправить</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
 
-    <!--<div class="ccattrib">Сергей Михайлович Макаренков</div><br/><div class="ccattrib">Генеральный директор издательства «Рипол Классик»</div>-->
-</div>
-</div>
+    </section>
 
-<div class="t8s-intro__copytext">
-<div class="container">
+    <section class="container">
 
-    <div class="row">
-        <div class="col-md-8">
-            <div class="t8s-intro__copytext__text">
-                <h2>Дорогие друзья!</h2>
-                <p>Как основатель одного из крупнейших издательств в России «Рипол Классик», соучредитель издательского холдинга T8,
-                    представляю вам новый проект «T8&nbsp;/&nbsp;Авторские решения», цель которого дать шанс любому автору
-                    заявить миру о себе.</p>
+        <!--Издайте свою книгу-->
+
+        <div class="row">
+            <div class="col-md-5">
+                {% assign form_options = 't8s-lead-form--intro' %}
+                {% include "form" %}
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-2 hidden-sm hidden-xs text-center">
+                        <hr class="t8s-hr-vertical" />
+                    </div>
+                    <div class="col-md-10">
+                        <br/>
+                        <h3>Издайте свою книгу</h3>
+                        <ul class="list-unstyled t8-feature-list">
+                            <li>Художественная, детская, научная и другая литература любых жанров</li>
+                            <li>С сохранением авторских прав</li>
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
+
             </div>
         </div>
-        <div class="col-md-4"></div>
+    </section>
 
-    </div>
-    <div class="row">
-        <div class="col-md-5">
-            <h3>Мы добиваемся этого благодаря:</h3>
-            <ul class="t8s-intro__copytext__list">
-                <li>Многолетнему оптыту работы на книжном рынке</li>
-                <li>Новейшему оборудованию для офсетной и цифровой печати</li>
-                <li>Более 35.000 точек продаж бумыжных, электронных и аудио-книг в России и за рубежом</li>
-                <li>Креативному подходу, персональной PR поддержке и работе с авторскими брендами.</li>
+
+
+    <section class="container t8s-section--publishing">
+        <!--Подготовка и издание книг-->
+        <div class="row ">
+            <div class="col-sm-6 col-sm-offset-1">
+                <h3>Подготовка и издание авторских книг любого жанра</h3>
+                <br/>
+                <div class="row t8s-feature">
+                    <div class="col-sm-3 t8s-feature__lead__icon">
+                        <img src="{{ 't8-icon-paperbook.svg' | asset_url }}" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-sm-9 t8s-feature__lead">
+                        Бумажные книги
+                    </div>
+                </div>
+                <div class="row t8s-feature">
+                    <div class="col-sm-3 t8s-feature__lead__icon">
+                        <img src="{{ 't8-icon-ebook.svg' | asset_url }}" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-sm-9 t8s-feature__lead">
+                        Электронные книги
+                    </div>
+                </div>
+                <div class="row t8s-feature">
+                    <div class="col-sm-3 t8s-feature__lead__icon">
+                        <img src="{{ 't8-icon-audio.svg' | asset_url }}" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-sm-9 t8s-feature__lead">
+                        Аудио книги
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 t8s-publishing__graphic">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="t8s-section--ripol">
+        <!--Рипол-->
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-3 t8s-section--ripol__logo">
+                </div>
+                <div class="col-sm-9" >
+                    <p class="lead">
+                        <strong>Каждая изданная книга</strong> передаётся в крупнейшее издательство <strong>«РИПОЛ Классик»</strong> для оценки возможности дальнейшего продвижения автора <strong>за счёт издательства</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container">
+        <!--Распространение-->
+        <header class="text-center t8s-section__header">
+            <h3>Распространение книг</h3>
+        </header>
+        <div class="text-center">
+            <ul class="list-unstyled t8-feature-list t8-feature-list--small">
+                <li>По каталогу книжной дистрибуции «Амадеос» — крупнейшей в РФ</li>
             </ul>
         </div>
-        <div class="col-md-6 col-md-offset-1">
-            <div class="">
-                <br/>
-                <p class="lead">Мало быть <strong>гением</strong><br/>
-                    Нужно быть гением <strong>признанным</strong>
-                </p>
-                <div class="t8s-intro__copytext__signature">
+        <div class="row">
+            <div class="col-sm-3  text-center">
+                <div class="t8s-feature-column">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
+                        <li>В 35.000 интернет-магазинов электронных книг всего мира</li>
+                    </ul>
                 </div>
-                <strong><em>Сергей Михайлович Макаренков</em></strong>
-                <br/>
-                <em>Генеральный директор издательства «Рипол Классик»</em>
+                <img src="{{'logo-ishops-alibris.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-AbeBooks.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-ingram.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-amazon.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-googlePlay.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+            </div>
+            <div class="col-sm-3 text-center">
+                <div class="t8s-feature-column">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
+                        <li>В крупнейшие книжные магазины (по&nbsp;согласованию)</li>
+                    </ul>
+                </div>
+                <img src="{{'logo-bigshops-republic.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-mgvardia.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-mdk.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-biblioglobus.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-moskva.png' | asset_url }}" class="t8-logo-partner" alt=""/>
 
+            </div>
+            <div class="col-sm-3  text-center">
+                <div class="t8s-feature-column">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
+                        <li>В Интернет-магазины, работающие с технологией «Печать по&nbsp;требованию»</li>
+                    </ul>
+                </div>
+                <img src="{{'logo-eshops-ozon.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-eshops-readru.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-eshops-myshop.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+
+            </div>
+            <div class="col-sm-3  text-center">
+                <div class="t8s-feature-column">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
+                        <li>В ведущие торговые площадки аудио-книг</li>
+                    </ul>
+                </div>
+                <img src="{{'logo-ashops-voxclub.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ashops-litres.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ashops-knigavsluh.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+
+            </div>
+        </div>
+
+    </section>
+<br/><br/><br/>
+
+    <section class="">
+        <!--PR-->
+        <header class="text-center">
+            <h3>PR-продвижение</h3>
+        </header>
+        <div class="t8s-section--promotion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="{{'t8-comments.svg' | asset_url }}" class="img-responsive t8-img" alt=""/>
+                        <h4>Рецензии и отзывы профессиональных критиков</h4>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="{{'t8-article.svg' | asset_url }}" class="img-responsive t8-img" alt=""/>
+                        <h4>Статьи о книге и об авторе в&nbsp;СМИ</h4></div>
+                    <div class="col-md-4 text-center">
+                        <img src="{{'t8-presentations.svg' | asset_url }}" class="img-responsive t8-img" alt=""/>
+                        <h4>Специальные акции в точках продаж (выкладки, промо-материалы)</h4></div>
+                </div>
             </div>
 
         </div>
-    </div>
-</div>
+    </section>
 
-</div>
 
+    <section class="container">
+        <!--Доверьтесь-->
+        <header class="text-center t8s-section__header">
+            <h3>Доверьтесь профессионалам</h3>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--plane">
+                        <li>Многолетний опыт работы на книжном рынке</li>
+                        <li>Новейшее оборудование для офсетной и цифровой печати, включая технологию «Печать по требованию» (P.O.D.)</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--plane">
+                        <li>Огромная сеть дистрибуции в РФ и за рубежом</li>
+                        <li>Креативный подход, персональная <span style="white-space: nowrap">PR-поддержка</span> и работа с авторскими брендами</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<br/>
+<br/>
+
+    <section class="container">
+        <!--Запрос-->
+        <header class="text-center t8s-section__header">
+            <h3>Да, мне это интересно!</h3>
+        </header>
+        <div class="text-center">
+            <hr class="t8s-hr-horisontal"/>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                {% assign form_options = '' %}
+                {% include "form" %}
+            </div>
+        </div>
+    </section>
+<br/><br/><br/>
 
 
 {% endblock %}

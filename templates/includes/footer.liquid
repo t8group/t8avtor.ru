@@ -6,6 +6,7 @@
                 <li {% if mixture.url == 'index' %}class="active"{% endif %}><a href="/index"><i class="glyphicon glyphicon-home"></i> Главная</a></li>
                 <li {% if mixture.url == 'about' %}class="active"{% endif %}><a href="/about">О проекте</a></li>
                 <li {% if mixture.url == 'contests' %}class="active"{% endif %}><a href="/contests">Конкурсы</a></li>
+                <li {% if mixture.url == 'offers' %}class="active"{% endif %}><a href="/offers">Акции</a></li>
                 <li {% if mixture.url == 'partners' %}class="active"{% endif %}><a href="/partners">Партнеры</a></li>
                 <li {% if mixture.url == 'contacts' %}class="active"{% endif %}><a href="/contact">Контакты</a></li>
             </ul>
@@ -16,14 +17,14 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <p>2014 &copy; ГК «Рипол Классик»<br/>
-                    Тел.: (495) 775-88-85
-                    Email: <a href="mailto:info@ripol.ru">info@ripol.ru</a></p>
+                <p>2014 &copy; ОАО «Т8 Издательские Технологии»<br/>
+                    Тел.:  +7 (495) 545-44-94 &nbsp;&nbsp;&nbsp;
+                    Email: <a href="mailto:info@ripol.ru">info@t8avtor.ru</a></p>
             </div>
             <div class="col-md-8 t8s-footer__logos">
-                <a href="http://ripol.ru"><img src="{{ 'logo-ripol.svg' | asset_url}}" width="80" alt=""/></a>
+                <a href="http://ripol.ru" target="_blank"><img src="{{ 'logo-ripol.svg' | asset_url}}" width="80" alt=""/></a>
                 <img style="margin-left: 2em" src="{{ 'logo-t8s.svg' | asset_url}}" width="200" alt=""/>
-                <a href="http://t8group.ru"><img style="margin-left: 2em" src="{{ 'logo-t8.svg' | asset_url}}" width="230" alt=""/></a>
+                <a href="http://t8group.ru" target="_blank"><img style="margin-left: 2em" src="{{ 'logo-t8.svg' | asset_url}}" width="230" alt=""/></a>
             </div>
         </div>
     </div>

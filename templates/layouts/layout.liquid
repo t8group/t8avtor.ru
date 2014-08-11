@@ -12,8 +12,10 @@
         {% block styles %}{% endblock %}
     </head>
     <body>
-    {%if mixture.url == 'index' %}{% include "navbar" %}{%endif%}
-    {%if mixture.url != 'index' %}{% include "navbar-plain" %}{%endif%}
+    <!--{%if mixture.url == 'index' %}-->
+    <!--{%endif%}-->
+    {% include "navbar" %}
+    <!--{%if mixture.url != 'index' %}{% include "navbar-plain" %}{%endif%}-->
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
         {% include "footer" %}

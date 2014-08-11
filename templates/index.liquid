@@ -20,21 +20,8 @@
 
         <div class="row">
             <div class="col-md-5">
-                <form class="t8s-lead-form t8s-lead-form--intro">
-                    <h4 class="t8s-lead-form__title">Запрос на оказание услуг</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="ФИО" required/>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" required/>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Телефон" required/>
-                    </div>
-                    <div class="form-group">
-                        <button data-loading-text="Отправляем..." class="t8s-lead-form__button" type="submit">Отправить</button>
-                    </div>
-                </form>
+                {% assign form_options = 't8s-lead-form--intro' %}
+                {% include "form" %}
             </div>
             <div class="col-md-7">
                 <div class="row">
@@ -67,7 +54,7 @@
                 <br/>
                 <div class="row t8s-feature">
                     <div class="col-sm-3 t8s-feature__lead__icon">
-                        <img src="../assets/img/t8-icon-paperbook.svg" class="img-responsive" alt=""/>
+                        <img src="{{ 't8-icon-paperbook.svg' | asset_url }}" class="img-responsive" alt=""/>
                     </div>
                     <div class="col-sm-9 t8s-feature__lead">
                         Бумажные книги
@@ -75,7 +62,7 @@
                 </div>
                 <div class="row t8s-feature">
                     <div class="col-sm-3 t8s-feature__lead__icon">
-                        <img src="../assets/img/t8-icon-ebook.svg" class="img-responsive" alt=""/>
+                        <img src="{{ 't8-icon-ebook.svg' | asset_url }}" class="img-responsive" alt=""/>
                     </div>
                     <div class="col-sm-9 t8s-feature__lead">
                         Электронные книги
@@ -83,7 +70,7 @@
                 </div>
                 <div class="row t8s-feature">
                     <div class="col-sm-3 t8s-feature__lead__icon">
-                        <img src="../assets/img/t8-icon-audio.svg" class="img-responsive" alt=""/>
+                        <img src="{{ 't8-icon-audio.svg' | asset_url }}" class="img-responsive" alt=""/>
                     </div>
                     <div class="col-sm-9 t8s-feature__lead">
                         Аудио книги
@@ -120,57 +107,56 @@
             <h3>Распространение книг</h3>
         </header>
         <div class="text-center">
-            <ul class="list-unstyled t8-feature-list">
+            <ul class="list-unstyled t8-feature-list t8-feature-list--small">
                 <li>По каталогу книжной дистрибуции «Амадеос» — крупнейшей в РФ</li>
             </ul>
         </div>
-        <br/>
         <div class="row">
-            <div class="col-sm-6  text-center">
+            <div class="col-sm-3  text-center">
                 <div class="t8s-feature-column">
-                    <ul class="list-unstyled t8-feature-list">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
                         <li>В 35.000 интернет-магазинов электронных книг всего мира</li>
                     </ul>
                 </div>
-                <img src="../assets/img/logos/logo-ishops-alibris.png" alt=""/>
-                <img src="../assets/img/logos/logo-ishops-AbeBooks.png" alt=""/>
-                <img src="../assets/img/logos/logo-ishops-ingram.png" alt=""/>
-                <img src="../assets/img/logos/logo-ishops-amazon.png" alt=""/>
-                <img src="../assets/img/logos/logo-ishops-googlePlay.png" alt=""/>
+                <img src="{{'logo-ishops-alibris.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-AbeBooks.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-ingram.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-amazon.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ishops-googlePlay.png' | asset_url }}" class="t8-logo-partner" alt=""/>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col-sm-3 text-center">
                 <div class="t8s-feature-column">
-                    <ul class="list-unstyled t8-feature-list">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
                         <li>В крупнейшие книжные магазины (по&nbsp;согласованию)</li>
                     </ul>
                 </div>
-                <img src="../assets/img/logos/logo-bigshops-republic.png" alt=""/>
-                <img src="../assets/img/logos/logo-bigshops-mgvardia.png" alt=""/>
-                <img src="../assets/img/logos/logo-bigshops-mdk.png" alt=""/>
-                <img src="../assets/img/logos/logo-bigshops-biblioglobus.png" alt=""/>
-                <img src="../assets/img/logos/logo-bigshops-moskva.png" alt=""/>
+                <img src="{{'logo-bigshops-republic.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-mgvardia.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-mdk.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-biblioglobus.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-bigshops-moskva.png' | asset_url }}" class="t8-logo-partner" alt=""/>
 
             </div>
-            <div class="col-sm-6  text-center">
+            <div class="col-sm-3  text-center">
                 <div class="t8s-feature-column">
-                    <ul class="list-unstyled t8-feature-list">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
                         <li>В Интернет-магазины, работающие с технологией «Печать по&nbsp;требованию»</li>
                     </ul>
                 </div>
-                <img src="../assets/img/logos/logo-eshops-ozon.png" alt=""/>
-                <img src="../assets/img/logos/logo-eshops-readru.png" alt=""/>
-                <img src="../assets/img/logos/logo-eshops-myshop.png" alt=""/>
+                <img src="{{'logo-eshops-ozon.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-eshops-readru.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-eshops-myshop.png' | asset_url }}" class="t8-logo-partner" alt=""/>
 
             </div>
-            <div class="col-sm-6  text-center">
+            <div class="col-sm-3  text-center">
                 <div class="t8s-feature-column">
-                    <ul class="list-unstyled t8-feature-list">
+                    <ul class="list-unstyled t8-feature-list t8-feature-list--small">
                         <li>В ведущие торговые площадки аудио-книг</li>
                     </ul>
                 </div>
-                <img src="../assets/img/logos/logo-ashops-voxclub.png" alt=""/>
-                <img src="../assets/img/logos/logo-ashops-litres.png" alt=""/>
-                <img src="../assets/img/logos/logo-ashops-knigavsluh.png" alt=""/>
+                <img src="{{'logo-ashops-voxclub.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ashops-litres.png' | asset_url }}" class="t8-logo-partner" alt=""/>
+                <img src="{{'logo-ashops-knigavsluh.png' | asset_url }}" class="t8-logo-partner" alt=""/>
 
             </div>
         </div>
@@ -187,14 +173,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <img src="../assets/img/t8-comments.svg" class="img-responsive t8-img" alt=""/>
+                        <img src="{{'t8-comments.svg' | asset_url }}" class="img-responsive t8-img" alt=""/>
                         <h4>Рецензии и отзывы профессиональных критиков</h4>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="../assets/img/t8-article.svg" class="img-responsive t8-img" alt=""/>
+                        <img src="{{'t8-article.svg' | asset_url }}" class="img-responsive t8-img" alt=""/>
                         <h4>Статьи о книге и об авторе в&nbsp;СМИ</h4></div>
                     <div class="col-md-4 text-center">
-                        <img src="../assets/img/t8-presentations.svg" class="img-responsive t8-img" alt=""/>
+                        <img src="{{'t8-presentations.svg' | asset_url }}" class="img-responsive t8-img" alt=""/>
                         <h4>Специальные акции в точках продаж (выкладки, промо-материалы)</h4></div>
                 </div>
             </div>
@@ -221,7 +207,7 @@
 
                 <div class="col-md-6">
                     <ul class="list-unstyled t8-feature-list t8-feature-list--plane">
-                        <li>Громная сеть дистрибуции в РФ и за рубежом</li>
+                        <li>Огромная сеть дистрибуции в РФ и за рубежом</li>
                         <li>Креативный подход, персональная <span style="white-space: nowrap">PR-поддержка</span> и работа с авторскими брендами</li>
                     </ul>
                 </div>
@@ -241,21 +227,8 @@
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <form class="t8s-lead-form">
-                    <h4 class="t8s-lead-form__title">Запрос на оказание услуг</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="ФИО"/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email"/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Телефон"/>
-                    </div>
-                    <div class="form-group">
-                        <button data-loading-text="Отправляем..." class="t8s-lead-form__button" type="submit">Отправить</button>
-                    </div>
-                </form>
+                {% assign form_options = '' %}
+                {% include "form" %}
             </div>
         </div>
     </section>

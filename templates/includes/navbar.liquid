@@ -4,6 +4,7 @@
         <li {% if mixture.url == 'index' %}class="active"{% endif %}><a href="/index"><i class="glyphicon glyphicon-home"></i> Главная</a></li>
         <li {% if mixture.url == 'about' %}class="active"{% endif %}><a href="/about">О проекте</a></li>
         <li {% if mixture.url == 'contests' %}class="active"{% endif %}><a href="/contests">Конкурсы</a></li>
+        <li {% if mixture.url == 'offers' %}class="active"{% endif %}><a href="/offers">Акции</a></li>
         <li {% if mixture.url == 'partners' %}class="active"{% endif %}><a href="/partners">Партнеры</a></li>
         <li {% if mixture.url == 'contacts' %}class="active"{% endif %}><a href="/contact">Контакты</a></li>
     </ul>
@@ -14,6 +15,6 @@
         <button type="button" class="t8s-navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
             МЕНЮ
         </button>
-        <a href="/index"><h1 class="text-hide t8s-logo--header">Т8 Авторские решения</h1></a>
+        <a href="/index"><h1 class="text-hide t8s-logo--header {% if mixture.url != 'index' %}t8s-logo--header--black{% endif %}">Т8 Авторские решения</h1></a>
     </div>
 </nav>

@@ -5735,7 +5735,7 @@ html, body {
   color: inherit; }
 
 #wrapper {
-  padding-top: 3em; }
+  padding-top: 6em; }
 
 .navmenu-inverse {
   background-color: #fbb500;
@@ -5770,21 +5770,11 @@ html, body {
   display: inline-block;
   float: left; }
 
+.t8s-logo--header--black {
+  background-image: url(../img/t8avtor-logo-complete-black.svg); }
+
 .t8s-logo--header2 {
   background-image: url(../img/t8s-logo.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: contain;
-  background-size: contain;
-  width: 270px;
-  height: 50px;
-  margin: 0 15px;
-  padding: 0;
-  display: inline-block;
-  float: left; }
-
-.t8s-navbar--plain .t8s-logo--header {
-  background-image: url(../img/logo-t8s2.svg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
@@ -5802,8 +5792,7 @@ html, body {
   float: right;
   margin-right: 15px;
   margin-left: 15px;
-  padding: 6px 6px;
-  margin-top: 8px;
+  padding: 18px 8px 13px 8px;
   margin-bottom: 4px;
   background-color: #f35456;
   background-image: none;
@@ -5952,7 +5941,7 @@ body > ymaps {
   display: inline-block;
   list-style: none;
   font-size: 24px; }
-  .t8-feature-list li:before {
+  .t8-feature-list > li:before {
     content: '';
     display: inline-block;
     background: url("../img/t8-check.svg") no-repeat;
@@ -5963,16 +5952,26 @@ body > ymaps {
     height: 35px;
     margin-left: -55px;
     margin-right: 20px;
-    color: #a94442;
     position: relative;
     top: 5px; }
-  .t8-feature-list li {
+  .t8-feature-list > li {
     margin-left: 55px;
     margin-top: 0.8em; }
 
-.t8-feature-list--plane li:before {
+.t8-feature-list--plane > li:before {
   background: url("../img/t8-plane.svg") no-repeat;
   top: 14px; }
+
+.t8-feature-list--small {
+  font-size: 16px; }
+  .t8-feature-list--small > li:before {
+    width: 20px;
+    height: 20px;
+    margin-left: -35px;
+    margin-right: 15px; }
+  .t8-feature-list--small > li {
+    margin-left: 35px;
+    margin-top: 0.8em; }
 
 .t8s-hr-vertical {
   border: 0;
@@ -6057,4 +6056,14 @@ body > ymaps {
 .t8-img {
   max-width: 150px;
   margin: 0 auto; }
+
+.t8-logo-partner {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.55; }
+
+.t8-logo-partner:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
 

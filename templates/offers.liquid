@@ -60,27 +60,33 @@
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <form class="t8s-lead-form">
+                <form class="t8s-lead-form {{form_options}} " action="">
+                    <input type="hidden" name="projectId" value="t8.authors"/>
+                    <input type="hidden" name="campaignParams" value=""/>
+                    <input type="hidden" name="campaignReferrer" value=""/>
+                    <input type="hidden" name="formType" value="certRequest"/>
+
                     <h4 class="t8s-lead-form__title">Запрос на сертификат</h4>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="ФИО">
+                        <input name="fullName" type="text" class="form-control" placeholder="Ф. И. О." required/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <span style="opacity: 1; left: 532px; top: 149.296875px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                    </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Телефон">
+                        <input name="phone" type="tel" class="form-control" placeholder="Телефон" required/>
                     </div>
                     <div class="form-group">
                         <label class="checkbox-inline">
-                            <input type="checkbox" class=""/>
-                            Я подтверждаю, что являюсь членом союза писателей МГО СПР
+                            <input name="sprMember" type="checkbox" class=""/>
+                            Я уже являюсь членом союза писателей МГО СПР
                         </label>
                     </div>
                     <div class="form-group">
                         <button data-loading-text="Отправляем..." class="t8s-lead-form__button" type="submit">Отправить</button>
                     </div>
                 </form>
+
             </div>
         </div>
 

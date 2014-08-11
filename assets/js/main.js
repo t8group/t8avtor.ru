@@ -31,10 +31,10 @@ $('.t8s-lead-form')
     }
 );
 
-setFiels();
+setFields();
 
 
-function setFiels(){
+function setFields(){
     var cookie = t8Cookie();
     var form = $('.t8s-lead-form');
     if (form){

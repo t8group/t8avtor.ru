@@ -1,13 +1,18 @@
 <form class="t8s-lead-form {{form_options}} " action="">
+    <input type="hidden" name="projectId" value="t8.authors"/>
+    <input type="hidden" name="campaignParams" value=""/>
+    <input type="hidden" name="campaignReferrer" value=""/>
+    <input type="hidden" name="formType" value="serviceRequest"/>
+
     <h4 class="t8s-lead-form__title">Запрос на оказание услуг</h4>
     <div class="form-group">
-        <input type="text" class="form-control" placeholder="Ф. И. О." required/>
+        <input name="fullName" type="text" class="form-control" placeholder="Ф. И. О." required/>
     </div>
     <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email" required/>
+        <input name="email" type="email" class="form-control" placeholder="Email" required/>
     </div>
     <div class="form-group">
-        <input type="tel" class="form-control" placeholder="Телефон" required/>
+        <input name="phone" type="tel" class="form-control" placeholder="Телефон" required/>
     </div>
     <div class="form-group">
         <button data-loading-text="Отправляем..." class="t8s-lead-form__button" type="submit">Отправить</button>

@@ -1,12 +1,11 @@
 @import "bootstrap/bootstrap.scss";
 @import "jasny-bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,900italic,300,800&subset=cyrillic,latin);
+@import "variables";
+@import "overrides";
 
 
-$t8s-intro-color: #222222;
-$t8s-action-color: #F35456;
-$t8s-attention-color: #FBB500;
-$t8s-success-color: #8bc43f;
+
 
 html, body {
   font-family: 'Open Sans', sans-serif;
@@ -44,16 +43,7 @@ html, body {
   background: transparent;
   position: absolute;
   width: 100%;
-  z-index: 9999;
-}
-.t8s-navbar--plain {
-  @extend .navbar;
-  @extend .navbar-default;
-  @extend .navbar-fixed-top;
-  background: transparent;
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 
@@ -483,3 +473,4 @@ body > ymaps {
   opacity: 1;
   filter: grayscale(0);
 }
+

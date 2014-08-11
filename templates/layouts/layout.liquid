@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         <!-- Styles -->
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
         {{ "style.css" | asset_url | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
@@ -19,7 +20,7 @@
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
         {% include "footer" %}
-
+        {% include "successModal" %}
 
     <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
@@ -41,6 +42,8 @@
             ga('send', 'pageview');
         </script>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        {{ "jquery.cookie.js" | asset_url | script_tag }}
 
         {{ "bootstrap.min.js" | asset_url | script_tag }}
         {{ "offcanvas.js" | asset_url | script_tag }}

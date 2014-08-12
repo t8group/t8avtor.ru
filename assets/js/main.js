@@ -4,10 +4,10 @@
 
 $('.t8s-lead-form')
     .on('submit', function(event){
-//        event.preventDefault();
-//        var form = $(this)
-//        var btn = form.find('.t8s-lead-form__button');
-//        btn.button('loading'),
+        event.preventDefault();
+        var form = $(this)
+        var btn = form.find('.t8s-lead-form__button');
+        btn.button('loading'),
 //        setTimeout(function () {
 //            btn.button("reset");
 //            $('#successModal').modal('toggle');
@@ -19,7 +19,7 @@ $('.t8s-lead-form')
             crossDomain: true,
             type : 'POST',
             data: form.serialize(),
-            success: function(){
+            success: function(result){
                 $('#successModal').modal('toggle');
                  form.clearForm();
             }
@@ -33,15 +33,17 @@ $('.t8s-lead-form')
 
 setFields();
 
-
 function setFields(){
-    var cookie = t8Cookie();
-    var form = $('.t8s-lead-form');
-    if (form){
-        form.find('input:hidden[name=campaignParams]').val(cookie.campaignParams);
-        form.find('input:hidden[name=campaignReferrer]').val(cookie.campaignReferrer);
+    if (location.search || document.referrer) {
+        var cookie = t8Cookie();
+        var form = $('.t8s-lead-form');
+        if (form){
+            form.find('input:hidden[name=campaignParams]').val(cookie.campaignParams);
+            form.find('input:hidden[name=campaignReferrer]').val(cookie.campaignReferrer);
+        }
+    return true;
     }
-
+    return false;
 }
 
 function t8Cookie(){
@@ -49,23 +51,24 @@ function t8Cookie(){
     var cookie = $.cookie('t8cookie');
 
     // Проверяем есть ли кука
-
     if (cookie){
         // Если да берем значение location.search и document.referrer из нее
         return cookie;
+    }
 
-    } else {
-        // Если нет, читаем location.search и document.referrer и ставим куку
-        var storedObj = {
-            campaignParams: location.search,
-            campaignReferrer: document.referrer
-        };
-
-        $.cookie.json = true;
-        $.cookie('t8cookie', storedObj, { expires: 10 });
-        return storedObj;
+    // Если нет, читаем location.search и document.referrer и ставим куку
+    var storedObj = {
+        campaignParams: location.search,
+        campaignReferrer: document.referrer
     };
+
+    $.cookie.json = true;
+    $.cookie('t8cookie', storedObj);
+
+    return storedObj;
 }
+
+
 
 
 

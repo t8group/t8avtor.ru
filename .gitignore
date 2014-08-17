@@ -3,3 +3,4 @@
 converted-html/
 .githubsettings
 assets/css/*.*
+**/*.min.lo*

@@ -416,12 +416,27 @@ body > ymaps {
 }
 
 .t8s-section--promotion{
-  padding: 3em 0;
+  padding: 1em 0;
+  padding-bottom: 0;
   background-color: $t8s-success-color;
   color: #ffffff;
-  h4 {
-    margin-top: 2em;
+  h3 {
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
+  .lead {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: $screen-tablet){
+  .t8-img {
+    width: 100px;
+  }
+}
+
+.t8s-section--contests {
+
 }
 
 .t8s-feature {
@@ -472,5 +487,9 @@ body > ymaps {
 .t8-logo-partner:hover {
   opacity: 1;
   filter: grayscale(0);
+}
+
+.feature-divider {
+  margin: 3em 0;
 }
 

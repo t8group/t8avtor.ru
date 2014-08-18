@@ -447,7 +447,7 @@ body > ymaps {
   font-size: 32px;
 }
 .t8s-feature__lead{
-  line-height: 2.8em;
+  line-height: 1.5em;
 }
 @media (max-width: $screen-desktop){
   .t8s-feature__lead{
@@ -458,7 +458,6 @@ body > ymaps {
   .t8s-feature__lead{
     line-height: 1em;
     text-align: center;
-    font-size: 24px;
   }
   .t8s-feature__lead__icon {
     img{

@@ -83,12 +83,13 @@ html, body {
 
 .t8s-navbar-toggle {
   @extend .btn;
-  border-radius: 0;
+  border-radius: 3;
   position: relative;
   float: right;
   margin-right: 15px;
   margin-left: 15px;
-  padding: 18px 8px 13px 8px;
+  margin-top: 10px;
+  padding: 8px;
 //  margin-top: 8px;
   margin-bottom: 4px;
   background-color: $t8s-action-color;

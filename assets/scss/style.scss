@@ -308,11 +308,11 @@ body > ymaps {
  height: 600px;
 
 }
-@media (max-width: $screen-desktop){
-  .t8s-publishing__graphic {
-    height: 500px;
-  }
-}
+//@media (max-width: $screen-desktop){
+//  .t8s-publishing__graphic {
+//    height: 500px;
+//  }
+//}
 @media (max-width: $screen-tablet){
   .t8s-publishing__graphic {
     display: none;
@@ -458,6 +458,7 @@ body > ymaps {
   .t8s-feature__lead{
     line-height: 1em;
     text-align: center;
+    font-size: 24px;
   }
   .t8s-feature__lead__icon {
     img{

@@ -21,7 +21,8 @@ $('.t8s-lead-form')
             data: form.serialize(),
             success: function(result){
                 $('#successModal').modal('toggle');
-                 form.clearForm();
+                ga('send', 'event', 'button', 'click', form.data('label'));
+                form.clearForm();
             }
         })
         .always(function () {

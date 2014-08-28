@@ -56,8 +56,9 @@
             </div>
         </noscript>
 
-        {{ "jquery.cookie.js" | asset_url | script_tag }}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+        {{ "jquery.cookie.js" | asset_url | script_tag }}
         {{ "bootstrap.min.js" | asset_url | script_tag }}
         {{ "offcanvas.js" | asset_url | script_tag }}
         {{ "main.js" | asset_url | script_tag }}

@@ -256,13 +256,16 @@ body > ymaps {
 }
 .t8s-lead-form {
   margin-top: 2em;
+}
+
+.t8s-lead-form__ {
   padding: 0.3em 1em;
   background-color: $t8s-attention-color;
   color: #ffffff;
   border-radius: 5px;
   display: block;
-
 }
+
 @media (max-width: $screen-desktop){
   .t8s-lead-form {
     position: static;
@@ -280,6 +283,13 @@ body > ymaps {
   margin: 0.7em 0;
   padding: 0;
 
+}
+
+.t8s-lead-form__notice {
+  display: block;
+  @extend .text-muted;
+  padding-top: 1em;
+  padding-left: 15px;
 }
 
 .t8s-lead-form__button {

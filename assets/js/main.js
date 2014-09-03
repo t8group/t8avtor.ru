@@ -3,7 +3,7 @@
  */
 
 $('.t8s-lead-form')
-    .on('submit', function(event){
+    .on('success.form.bv', function(event){
         event.preventDefault();
         var form = $(this)
         var btn = form.find('.t8s-lead-form__button');
@@ -19,7 +19,7 @@ $('.t8s-lead-form')
             crossDomain: true,
             type : 'POST',
             data: form.serialize(),
-            success: function(result){
+            success: function(){
                 $('#successModal').modal('toggle');
                 ga('send', 'event', 'button', 'click', form.data('label'));
                 form.clearForm();

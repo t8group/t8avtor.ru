@@ -256,3 +256,10 @@
 
 
 {% endblock %}
+{% block scripts %}
+<script>
+    $(document).ready(function() {
+        $('.t8s-lead-form').bootstrapValidator();
+    });
+</script>
+{% endblock %}

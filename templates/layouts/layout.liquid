@@ -21,8 +21,6 @@
         {% include "footer" %}
         {% include "successModal" %}
 
-    <!-- Script block allowing child pages to inject their own scripts -->
-        {% block scripts %}{% endblock %}
 
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -56,11 +54,16 @@
             </div>
         </noscript>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 
+        {{ "jquery.min.js" | asset_url | script_tag }}
         {{ "jquery.cookie.js" | asset_url | script_tag }}
         {{ "bootstrap.min.js" | asset_url | script_tag }}
+        {{ "bootstrapValidator.js" | asset_url | script_tag }}
+        {{ "ru_RU.js" | asset_url | script_tag }}
         {{ "offcanvas.js" | asset_url | script_tag }}
         {{ "main.js" | asset_url | script_tag }}
+    {% block scripts %}{% endblock %}
+
     </body>
 </html>

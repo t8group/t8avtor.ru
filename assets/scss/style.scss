@@ -11,6 +11,7 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
+  font-weight: 200;
 }
 
 
@@ -529,10 +530,48 @@ body > ymaps {
 
 
 
+.contests {
+  @extend .row;
+}
+
+.contests__feature {
+  @extend .col-md-4;
+}
+
+.contests__feature__heading {
+  @extend .text-center;
+  height: 250px;
+  small {
+    font-weight: 200;
+  }
+}
+
+.contests__feature__text {
+  font-weight: 200;
+}
 
 
+.fileupload  > .glyphicon {
+  display: none!important;
+}
+
+.fileinput-filename {
+  display: inline;
+}
+.fileinput-filename__ {
+  overflow: hidden;
+}
+.t8s-lead-form--upload {
+  margin-top: 0;
+}
 
 // Global media queries ---------------------------
+
+@media screen and  (max-width: $screen-md-min){
+  .contests__feature__heading {
+    height: auto;
+  }
+}
 
 @media screen and (max-width: $screen-phone) {
   .t8s-logo--header {
@@ -551,9 +590,6 @@ body > ymaps {
     font-size: 30px;
   }
   .t8s-intro__copytext__tagline{
-    font-size: 24px;
-  }
-  .lead {
     font-size: 24px;
   }
   .t8s-section--publishing{

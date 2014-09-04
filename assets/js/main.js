@@ -32,6 +32,30 @@ $('.t8s-lead-form')
     }
 );
 
+$('.t8s-lead-form--upload')
+    .on('success.form.bv', function(event){
+        event.preventDefault();
+        var form = $(this)
+        var btn = form.find('.t8s-lead-form__button');
+        btn.button('loading'),
+            $.ajax({
+                url: 'mailer.php',
+                crossDomain: false,
+                type : 'POST',
+                data: form.serialize(),
+                success: function(){
+                    $('#successModal').modal('toggle');
+                    ga('send', 'event', 'button', 'click', form.data('label'));
+                    form.clearForm();
+                }
+            })
+                .always(function () {
+                    btn.button('reset')
+
+                })
+    }
+);
+
 setFields();
 
 function setFields(){

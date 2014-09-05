@@ -39,7 +39,7 @@ $('.t8s-lead-form--upload')
         var btn = form.find('.t8s-lead-form__button');
         btn.button('loading'),
             $.ajax({
-                url: 'mailer.php',
+                url: '/form_handler.php',
                 crossDomain: false,
                 type : 'POST',
                 data: form.serialize(),

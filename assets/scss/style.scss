@@ -540,7 +540,6 @@ body > ymaps {
 
 .contests__feature__heading {
   @extend .text-center;
-  height: 250px;
   small {
     font-weight: 200;
   }
@@ -565,11 +564,17 @@ body > ymaps {
   margin-top: 0;
 }
 
+a :hover .fake{
+  text-decoration: none!important;
+}
+
 // Global media queries ---------------------------
 
 @media screen and  (max-width: $screen-md-min){
   .contests__feature__heading {
-    height: auto;
+    .fake {
+      display: none;
+    }
   }
 }
 

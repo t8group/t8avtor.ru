@@ -81,7 +81,7 @@
             </div>
 
            <div class="col-md-6">
-               <form class="t8s-lead-form--upload" data-label="author_contest" enctype="multipart/form-data" action=""
+               <form class="t8s-lead-form--upload" data-label="author_contest" method="post" enctype="multipart/form-data" action="/form_handler.php"
                      data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
                      data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
                      data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
@@ -129,8 +129,8 @@
                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Выбрать файл</span><span class="fileinput-exists">Изменить</span>
                                    <input type="file" name="work" required
                                           data-bv-notempty="true"
-                                          data-bv-notempty-message="Пожалуйста выберите файл для загрузки"
-                                           ></span>
+                                          data-bv-notempty-message="Пожалуйста выберите файл для загрузки">
+                                           </span>
                                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Удалить</a>
                            </div>
                        </div>
@@ -148,6 +148,7 @@
 {% block scripts %}
 
 {{ "fileinput.js" | asset_url | script_tag }}
+{{ "jquery.form.js" | asset_url | script_tag }}
 
 
 <script>
@@ -168,6 +169,8 @@
             }
         }
         );
+
+
 });
 </script>
 {% endblock %}

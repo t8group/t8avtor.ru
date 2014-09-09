@@ -32,29 +32,65 @@ $('.t8s-lead-form')
     }
 );
 
-$('.t8s-lead-form--upload')
-    .on('success.form.bv', function(event){
-        event.preventDefault();
+
+$('.t8s-lead-form--upload').on('success.form.bv', function() {
+    $(this).ajaxSubmit({
+        uploadProgress: function(){
+            var form = $(this)
+            var btn = form.find('.t8s-lead-form__button');
+            btn.button('loading');
+        },
+        success: function(){
+            $('#successModal').modal('toggle');
+            ga('send', 'event', 'button', 'click', form.data('label'));
+            form.clearForm();
+        }
+    });
+    return false;
+});
+
+//$('.t8s-lead-form--upload')
+//    .on('success.form.bv', function(event){
+//        event.stopPropagation();
+//        event.preventDefault();
         var form = $(this)
+//        var formData = new FormData(form);
         var btn = form.find('.t8s-lead-form__button');
         btn.button('loading'),
-            $.ajax({
-                url: '/form_handler.php',
-                crossDomain: false,
-                type : 'POST',
-                data: form.serialize(),
-                success: function(){
-                    $('#successModal').modal('toggle');
-                    ga('send', 'event', 'button', 'click', form.data('label'));
-                    form.clearForm();
-                }
-            })
-                .always(function () {
-                    btn.button('reset')
-
-                })
-    }
-);
+////        setTimeout(function () {
+////            btn.button("reset");
+////            $('#successModal').modal('toggle');
+////            console.log(form.serialize());
+////            ga('send', 'event', 'button', 'click', form.data('label'));
+////            form.clearForm();
+////        }, 3e3)
+//            $.ajax({
+//                url: '/form_handler.php',
+//                crossDomain: false,
+//                type : 'POST',
+//                data: formData,
+//                cache: false,
+//                contentType: false,
+//                processData: false,
+//                xhr: function() {  // Custom XMLHttpRequest
+//                    var myXhr = $.ajaxSettings.xhr();
+//                    if(myXhr.upload){ // Check if upload property exists
+//                        myXhr.upload.addEventListener('progress',function(){}, false); // For handling the progress of the upload
+//                    }
+//                    return myXhr;
+//                },
+//                success: function(){
+//                    $('#successModal').modal('toggle');
+//                    ga('send', 'event', 'button', 'click', form.data('label'));
+//                    form.clearForm();
+//                }
+//            })
+//                .always(function () {
+//                    btn.button('reset')
+//
+//                })
+//    }
+//);
 
 setFields();
 

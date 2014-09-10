@@ -276,6 +276,7 @@ body > ymaps {
 .t8s-lead-form--intro {
   position: relative;
   top: -80px;
+  margin-bottom: -80px;
 }
 
 
@@ -319,16 +320,30 @@ body > ymaps {
 //  transform: translateX(0);
 //}
 
-.t8s-publishing{
+.t8s-section--publishing{
+  margin-top: 2em;
 
 }
 .t8s-publishing__graphic {
  background: url("../img/t8-girl.png") no-repeat;
  background-position: center bottom;
  background-size: contain;
- height: 600px;
+ height: 500px;
 
 }
+
+
+.pub-feature {
+margin-top: 1em;
+}
+.pub-feature__img {
+  max-width: 70px;
+}
+.pub-feature__label {
+  @extend .lead;
+  padding-left: 1em;
+}
+
 //@media (max-width: $screen-desktop){
 //  .t8s-publishing__graphic {
 //    height: 500px;
@@ -427,9 +442,6 @@ body > ymaps {
   height: 200px;
 }
 
-.t8s-section--publishing{
-//  margin-top: 4em;
-}
 
 .t8s-section__header {
   border-bottom: 1px solid #eeeeee;
@@ -589,6 +601,23 @@ a :hover .fake{
     .fake {
       display: none;
     }
+  }
+  .pub-feature{
+    text-align: center;
+  }
+  .pub-feature__img{
+    max-width: 100px;
+  }
+  .pub-feature__label{
+    display: block;
+    margin-top: 0.2em;
+    padding-left: 0;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .t8-feature-list{
+    font-size: 18px;
   }
 }
 

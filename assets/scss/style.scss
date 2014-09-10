@@ -504,16 +504,30 @@ body > ymaps {
   margin: 0 auto;
 }
 
-.t8s-partner{
-  text-align: center;
-  height: 100px;
-  width: 100px;
-  margin-bottom: 2em;
-}
-.t8s-img--partner{
-  width: 100px;
 
+
+
+.item__ {
+  @extend .col-sm-2;
 }
+
+.img-partner {
+  max-height: 100px;
+  max-width: 100px;
+  padding: 5px;
+}
+
+.item-partner{
+  display: table;
+  width: 100%;
+  height: 100px;
+}
+.item-partner__{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
 
 .t8-logo-partner {
 //  filter: grayscale(1);

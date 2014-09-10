@@ -602,6 +602,15 @@ a :hover .fake{
       display: none;
     }
   }
+
+  h3 {
+    font-size: 24px;
+  }
+  .t8-feature-list{
+    font-size: 18px;
+  }
+}
+@media (max-width: $screen-tablet) {
   .pub-feature{
     text-align: center;
   }
@@ -612,12 +621,6 @@ a :hover .fake{
     display: block;
     margin-top: 0.2em;
     padding-left: 0;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  .t8-feature-list{
-    font-size: 18px;
   }
 }
 
